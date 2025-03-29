@@ -11,13 +11,15 @@ public class ClothesItem {
     @Id
     private String item_id;
 
+    private String item_name;
     private String owner_user_id;
     private HashMap item_tags;
     private Date last_worn_dt;
 
-    public ClothesItem(String item_id, String owner_user_id, HashMap item_tags, Date last_worn_dt) {
+    public ClothesItem(String item_id, String item_name, String owner_user_id, HashMap item_tags, Date last_worn_dt) {
         super();
         this.item_id = item_id;
+        this.item_name = item_name;
         this.owner_user_id = owner_user_id;
         this.item_tags = item_tags;
         this.last_worn_dt = last_worn_dt;
